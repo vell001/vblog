@@ -1,0 +1,16 @@
+---
+layout: default
+title: VBlog
+---
+
+```
+Welcome to VBlog...
+```
+
+###My new post
+
+{% for post in site.posts %}
+```
+[]({{ site.baseurl }}{{ post.url }})
+```
+{% endfor %}
