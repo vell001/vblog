@@ -1,2 +1,4 @@
 baseurl: /
+markdown: rdiscount
+pygments: true
 timezone: Asia/Chongqing
