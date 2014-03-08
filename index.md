@@ -2,7 +2,8 @@
 layout: default
 title: VBlog
 ---
-
+{{ page.title }}
+---------------------
 #####Welcome to VBlog...
 
 ###My new post
