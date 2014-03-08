@@ -1,4 +1,4 @@
-baseurl: http://vblog.vell001.ml
+baseurl: /
 markdown: rdiscount
 pygments: true
 timezone: Asia/Chongqing
