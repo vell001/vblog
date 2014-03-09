@@ -5,7 +5,7 @@ title: VSim [a racing-simulator by vell001]
 
 {{ page.title }}
 ---------------------
-This is my first project about Racing. I am a chinese with bad English, and today is my first time us English to write a post, Sorry for my bad Engilsh first…
+This is my first project about Racing. I am a chinese with bad English, and today is my first time use English to write a post, Sorry for my bad Engilsh first…
 
 I start my project from last year(2013). I am learning from [RacingMat](http://www.x-sim.de/forum/memberlist.php?mode=viewprofile&u=2248), here is his project:[Finished 2DOF 12V DC wiper arduino playseat](http://www.x-sim.de/forum/viewtopic.php?t=943). 
 My project is in progressing, I will update for every detail I finished. 
@@ -52,6 +52,14 @@ so sad for me. I am just a University student, have nothing can use for my proje
 > ![moto](http://images.cnitblog.com/blog/478900/201312/14205119-53ae549817ef46dc8a7073b5a7980dfe.jpg)
 
 ----------
-> All parts of controller is ready, it' time to put all parts together. 
+All parts of controller is ready, it' time to put all parts together. 
+
+----------
+> ![controller](http://images.cnitblog.com/blog/478900/201312/14205138-39f6ca0545b346db8937baa78d4f3ce4.jpg)
+> ![controller](http://images.cnitblog.com/blog/478900/201312/14205206-d2a5c0081beb475a855b9b97173015bd.jpg)
+> ![controller](http://images.cnitblog.com/blog/478900/201312/14205224-ae8e58961e4d4324ac0453cdf3e04627.jpg)
+> ![controller](http://images.cnitblog.com/blog/478900/201312/14205255-465f5a74f4864281afdaf0e29f3daf14.jpg)
+
+Who can guess what kind of wire I am using? Yes, I am using *Ethernet Cable*. I have unpacked 3 meter *Ethernet Cable*. *Ethernet Cable* is a bit hard.
 
 {{ page.date | date_to_string }}
