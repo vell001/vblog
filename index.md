@@ -4,9 +4,9 @@ title: VBlog
 ---
 {{ page.title }}
 ---------------------
-#####Welcome to VBlog...
+#####Welcome to vell001's world...
 
-###My new post
+###New post
 
 {% for post in site.posts %}
 
