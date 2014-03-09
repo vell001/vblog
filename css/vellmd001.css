@@ -74,7 +74,7 @@ code {
 aside {
     display: block;
     float: right;
-    width: 390px;
+    width: 60%;
 }
 blockquote {
     border-left:.5em solid #eee;
@@ -166,7 +166,7 @@ input[type=password],
 textarea,
 select {
   display: inline-block;
-  width: 210px;
+  width: 40%;
   padding: 4px;
   font-size: 13px;
   font-weight: normal;
