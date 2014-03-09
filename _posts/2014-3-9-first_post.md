@@ -1,0 +1,57 @@
+---
+layout: default
+title: VSim [a racing-simulator by vell001]
+---
+
+{{ page.title }}
+---------------------
+This is my first project about Racing. I am a chinese with bad English, and today is my first time us English to write a post, Sorry for my bad Engilsh first…
+
+I start my project from last year(2013). I am learning from [RacingMat](http://www.x-sim.de/forum/memberlist.php?mode=viewprofile&u=2248), here is his project:[Finished 2DOF 12V DC wiper arduino playseat](http://www.x-sim.de/forum/viewtopic.php?t=943). 
+My project is in progressing, I will update for every detail I finished. 
+######2013-12-14 20:42 
+-------------------------
+###Control Part
+I am using two 12V DC truck wiper motors, bought in *[taobao](http://www.taobao.com)*;
+The controller is *[Arduino Uno](http://www.arduino.cc)*, and the motor driver is *[MotoMonster](http://item.taobao.com/item.htm?id=16852136684)*(I am not advertising, this is a only one MotoMonster-driver I can find in tabao, I have no choice to bought this one. Please give me a message if you find anthor driver, my email:*[ vell001@qq.com](mailto:vell001@qq.com)*, thanks.
+
+Here is some pictures: 
+> ![items](http://images.cnitblog.com/blog/478900/201312/14204352-33791a99c7f743039a95a49b1a05f13c.png) 
+
+> Something I bought in taobao
+
+----------
+> ![arduino](http://images.cnitblog.com/blog/478900/201312/14204411-067f1f01ea93464ba7fb6e338787fe5c.jpg)
+> ![arduino](http://images.cnitblog.com/blog/478900/201312/14204432-85d2d2c0001b4b5c870ae26250de9a45.jpg)
+> ![arduino](http://images.cnitblog.com/blog/478900/201312/14204511-df9449897b6747e5859d087b5169c950.jpg)
+> ![arduino](http://images.cnitblog.com/blog/478900/201312/14204545-1fed53785c054128b47ec95138a62de2.jpg) 
+
+> My arduino board, made in china.(\*^_^\*)
+
+---------
+> ![moto driver](http://images.cnitblog.com/blog/478900/201312/14204614-cbacb685b45e45319b8ebe7792cce7a1.jpg)
+> ![moto driver](http://images.cnitblog.com/blog/478900/201312/14204643-66954c6dab6d40cb9e53064204d78aad.jpg)
+> ![moto driver](http://images.cnitblog.com/blog/478900/201312/14204733-42eb29fe70484861b6ecec81f240de5c.jpg) 
+
+> My moto-driver [MotoMonster], It's very suit for arduino uno.
+
+---------
+> ![power](http://images.cnitblog.com/blog/478900/201312/14204828-0076cac18e7848a4b4a6b20c5cbb02c8.jpg)
+> ![power](http://images.cnitblog.com/blog/478900/201312/14204853-1db3a2a3d5b9450ea568c07c1ae6847b.jpg)
+> ![power](http://images.cnitblog.com/blog/478900/201312/14204919-3c0cb01ee7784f7eb616590d145c0ffe.jpg)
+
+> My power supply, 12V 30A, look very nice. But the shopkeeper didn't give me a wire,
+so sad for me. I am just a University student, have nothing can use for my project in my dormitory. So I broke my socket only for a wire, bad idea...but I don't have another idea
+
+----------
+> ![moto](http://images.cnitblog.com/blog/478900/201312/14205009-32f854f7f8574dbd9a658bf63e0df438.jpg)
+> ![moto](http://images.cnitblog.com/blog/478900/201312/14205051-8f60ee4eb1a2451b80a58708e6b34776.jpg)
+> ![moto](http://images.cnitblog.com/blog/478900/201312/14204951-e99d7341dc80467f97da1a361ed05b0a.jpg)
+
+> At first glance, it was bigger and much more powerful than I imagined. Out of curiousity, I apart it, its structure is very simple.
+> ![moto](http://images.cnitblog.com/blog/478900/201312/14205119-53ae549817ef46dc8a7073b5a7980dfe.jpg)
+
+----------
+> All parts of controller is ready, it' time to put all parts together. 
+
+{{ page.date | date_to_string }}
