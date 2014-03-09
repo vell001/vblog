@@ -93,7 +93,7 @@ blockquote cite:before {
 
 blockquote p {  
     color: #666;
-    max-width: 75%;
+    max-width: 100%;
 }
 hr {
     width: 100%;
