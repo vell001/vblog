@@ -40,7 +40,8 @@ void main()
 > **分析**：掌握__LINE__和__FILE__这两个宏定义就行了
 
 >代码：
-<pre><code>
+
+```
 #include <iostream>
 using namespace std;
 
@@ -50,5 +51,5 @@ int main()
 	char* file = __FILE__;
 	cout << "filename:" << (file) << ",line is " << line << endl;
 	return 0;
-}</code></pre>
+}```
 2014/3/21 23:06:16 
