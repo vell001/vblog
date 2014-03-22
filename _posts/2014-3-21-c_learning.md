@@ -17,21 +17,20 @@ title: 复习C语言
  1. 得到当前系统的位数：sizeof函数
  2. 将1**左移**位数减一位得到一个最高位为1的二进制数，如: 0x10000000
  3. 将两数之差和0x10000000相**与**，如果为1，说明差是负数。。。
-
->代码：
-
+>
+代码：
+>
 	#include <stdio.h>
-	
+>	
 	int const shift = sizeof(int) * 8 - 1;
-
+>
 	#define max(a,b) ((((a)-(b))&(1 << shift))?b:a)
-	
+>	
 	// test
 	void main()
 	{
 		printf("%d", max(23,3));
 	}
-
 2014/3/21 22:45:13 
 
 --------------------
@@ -39,7 +38,7 @@ title: 复习C语言
 
 > **分析**：掌握__LINE__和__FILE__这两个宏定义就行了
 
->代码：
+> **代码**：
 >
 	#include <iostream>
 	using namespace std;
@@ -52,3 +51,62 @@ title: 复习C语言
 		return 0;
 	}
 2014/3/21 23:06:16 
+
+--------------------
+> 实现一个快速排序算法
+
+> **代码**:
+> 
+	#include <stdio.h>
+	#include <time.h> 
+>
+	#define NUM 15
+>
+	int Partition(int* a, int low, int high){
+		int key = a[low];
+		while(low < high){
+			while(low < high && a[high] >= key) --high;
+			a[low] = a[high];
+			while(low < high && a[low] <= key) ++low;
+			a[high] = a[low];
+		}
+		a[low] = key;
+		return low;
+	}
+>
+	int* QSort(int* a, int low, int high){
+		if(low < high){
+			int p = Partition(a, low, high);
+			QSort(a, low, p-1);
+			QSort(a, p+1, high);
+		}
+	}
+>
+	int* QuickSort(int* a, int n) {
+		return QSort(a, 0, n-1);
+	}
+>
+	int* GetRandomNum(int n) {
+		srand( (unsigned)time( NULL ) ); 
+		int* a = (int*)malloc(n * sizeof(int));
+		int i = 0;
+		for(i=0; i<n; i++) {
+			a[i] = rand() % n;
+		}
+		return a;
+	}
+>
+	void PrintList(int* a, int n){
+		int i = 0;
+		for(i=0; i<n; i++){
+			printf("%d  ", a[i]);
+		}
+		printf("\n");
+	}
+>
+	void main() {
+		int* a = GetRandomNum(NUM);
+		PrintList(a, NUM);
+		QuickSort(a, NUM);
+		PrintList(a, NUM);
+	}
