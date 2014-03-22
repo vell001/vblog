@@ -19,19 +19,19 @@ title: 复习C语言
  3. 将两数之差和0x10000000相**与**，如果为1，说明差是负数。。。
 
 >代码：
-<pre><code>
-#include <stdio.h>
 
-int const shift = sizeof(int) * 8 - 1;
+	#include <stdio.h>
+	
+	int const shift = sizeof(int) * 8 - 1;
 
-#define max(a,b) ((((a)-(b))&(1 << shift))?b:a)
+	#define max(a,b) ((((a)-(b))&(1 << shift))?b:a)
+	
+	// test
+	void main()
+	{
+		printf("%d", max(23,3));
+	}
 
-// test
-void main()
-{
-	printf("%d", max(23,3));
-}
-</code></pre>
 2014/3/21 22:45:13 
 
 --------------------
@@ -40,16 +40,15 @@ void main()
 > **分析**：掌握__LINE__和__FILE__这两个宏定义就行了
 
 >代码：
-
-```
-#include <iostream>
-using namespace std;
-
-int main()
-{
-	int line = __LINE__;
-	char* file = __FILE__;
-	cout << "filename:" << (file) << ",line is " << line << endl;
-	return 0;
-}```
+>
+	#include <iostream>
+	using namespace std;
+>	
+	int main()
+	{
+		int line = __LINE__;
+		char* file = __FILE__;
+		cout << "filename:" << (file) << ",line is " << line << endl;
+		return 0;
+	}
 2014/3/21 23:06:16 
