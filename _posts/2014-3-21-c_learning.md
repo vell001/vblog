@@ -147,3 +147,83 @@ title: 复习C语言
 			return low;
 		}
 	}
+
+--------------------------
+> 实现一个冒泡排序
+
+> **C代码**:
+>
+	#include <stdio.h>
+>
+	int* BubbleSort(int* a, int n){
+		int i = 0, j = 0, flag = 1, cup = 0;
+		for(i=n-1; i>0 && flag; i--){
+			for(j=0; j<i; j++){
+				flag = 0;
+				if(a[j] > a[j+1]){
+					cup = a[j];
+					a[j] = a[j+1];
+					a[j+1] = cup;
+					flag = 1;
+				}
+			}
+		}
+		return a;
+	}
+>
+	void main(){
+		int a[15] = {12,3,3,4,54,2,5,76,23,4,56,2,4,6,4};
+		int i = 0;
+		BubbleSort(a, 15);
+		for(i=0; i<15; i++){
+			printf("%d  ", a[i]);
+		}
+		printf("\n");
+	}
+2014/3/23 11:58:29 
+
+-------------------
+> 实现希尔排序
+
+> **C代码**:
+>
+	#include <stdio.h>
+>
+	int* ShellSort(int* a, int n){
+		int i = 0, j = 0, d = n, cup = 0;
+		for(d=n/2; d>=1; d=d/2){
+			for(i=d; i<n; i++){
+				cup = a[i];
+				for(j=i-d; j>=0 && a[j]>cup; j=j-d){
+					a[j+d] = a[j];
+				}
+				a[j+d] = cup;
+			}
+		}
+		return a;
+	}
+>
+	int* GetRandomNum(int n) {
+		srand( (unsigned)time( NULL ) ); 
+		int* a = (int*)malloc(n * sizeof(int));
+		int i = 0;
+		for(i=0; i<n; i++) {
+			a[i] = rand() % n;
+		}
+		return a;
+	}
+>
+	void PrintList(int* a, int n){
+		int i = 0;
+		for(i=0; i<n; i++){
+			printf("%d  ", a[i]);
+		}
+		printf("\n");
+	}
+>
+	void main(){
+		int* a = GetRandomNum(15);
+		PrintList(a, 15);
+		ShellSort(a, 15);
+		PrintList(a, 15);
+	}
